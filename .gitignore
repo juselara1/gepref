@@ -1,0 +1,10 @@
+*.env
+*.venv
+*.egg*
+*.ipynb
+**/*__pycache__/*
+**/*__.ipynb_checkpoints/*
+build/
+dist/
+sdist/
+wheels/
