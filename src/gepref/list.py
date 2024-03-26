@@ -11,4 +11,4 @@ class IdentityStep(AbstractStep[T]):
 
 class SquareStep(AbstractStep[List]):
     def call(self, data: T) -> T:
-        return data
+        return list(map(lambda i: i ** 2, data))

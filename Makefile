@@ -8,3 +8,7 @@ install:
 
 install-%:
 	.cicd/scripts.sh install $@
+
+.PHONY: test
+test:
+	pytest .

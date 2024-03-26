@@ -1,4 +1,4 @@
-from typing import TypeVar, Generic
+from typing import TypeVar, Generic, List
 from gepref.step import AbstractStep
 from functools import reduce
 
