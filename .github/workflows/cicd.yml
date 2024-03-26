@@ -1,0 +1,16 @@
+name: CI
+on:
+  # pull_request:
+  push:
+    branches:
+      - feat/cicd
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Setup python
+        uses: actions/setup-python@v4
+      - name: Install library
+        run: make install-dev
