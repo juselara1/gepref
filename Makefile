@@ -1,5 +1,8 @@
 SHELL := /usr/bin/env bash
 
+update:
+	pip install . --no-dependencies
+
 install:
 	pip install .
 
