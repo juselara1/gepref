@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gepref"
+version = "0.1.0"
+authors = [{name="Juan Lara", email="julara@unal.edu.co"}]
+requires-python = ">3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+	"jedi-language-server", "mypy", "pytest", "ruff", "flit"
+]
+
+[tool.setuptools.packages.find]
+where = ["src/"]

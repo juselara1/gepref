@@ -1,0 +1,20 @@
+name: CD
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Setup python
+        uses: actions/setup-python@v4
+      - name: Install library
+        run: make install-dev
+      - name: Deploy library
+        run: make deploy
+        env:
+          FLIT_USERNAME: __token__
+          FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
