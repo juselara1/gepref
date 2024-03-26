@@ -10,5 +10,14 @@ install-%:
 	.cicd/scripts.sh install $@
 
 .PHONY: test
-test:
+test: typetest formattest unittest 
+
+typetest:
+	mypy src/
+
+unittest:
 	pytest .
+
+formattest:
+	ruff src/
+

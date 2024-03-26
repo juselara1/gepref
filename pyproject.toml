@@ -11,7 +11,7 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-	"jedi-language-server", "mypy", "pytest"
+	"jedi-language-server", "mypy", "pytest", "ruff"
 ]
 
 [tool.setuptools.packages.find]
