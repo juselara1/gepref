@@ -1,10 +1,10 @@
-SHELL := /usr/bin/env bash
+SHELL:=/usr/bin/env bash
 
 update:
 	pip install . --no-dependencies
 
 install:
-	pip install .
+	.cicd/scripts.sh install
 
 install-%:
 	.cicd/scripts.sh install $@
@@ -21,3 +21,5 @@ unittest:
 formattest:
 	ruff src/
 
+deploy:
+	flit publish
