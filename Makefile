@@ -21,3 +21,5 @@ unittest:
 formattest:
 	ruff src/
 
+deploy:
+	flit publish
