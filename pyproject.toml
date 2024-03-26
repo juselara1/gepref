@@ -7,13 +7,11 @@ name = "gepref"
 version = "0.1.0"
 authors = [{name="Juan Lara", email="julara@unal.edu.co"}]
 requires-python = ">3.10"
-dependencies = [
-	"pydantic"
-]
+dependencies = []
 
 [project.optional-dependencies]
 dev = [
-	"jedi-language-server", "mypy", "pytest"
+	"jedi-language-server", "mypy", "pytest", "ruff"
 ]
 
 [tool.setuptools.packages.find]
