@@ -1,12 +1,8 @@
 name: CD
-# on:
-#   push:
-#     tags:
-#       - "*"
 on:
   push:
-    branches:
-      - feat/docs
+    tags:
+      - "*"
 
 permissions:
   contents: read
@@ -29,11 +25,11 @@ jobs:
       - name: Install library
         run: make install-dev
 
-      # - name: Deploy library
-      #   run: make deploy
-      #   env:
-      #     FLIT_USERNAME: __token__
-      #     FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      - name: Deploy library
+        run: make deploy
+        env:
+          FLIT_USERNAME: __token__
+          FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
 
       - name: Generate documentation
         run: make doc
