@@ -8,7 +8,7 @@ extensions = [
         "sphinx.ext.napoleon",
         "sphinx.ext.viewcode",
         "sphinx.ext.autosummary",
-        "recommonmark"
+        "myst_parser"
         ]
 
 autodoc_default_flags = ["members", "show-inheritance"]
@@ -28,4 +28,4 @@ html_theme_options = {
         }
 html_static_path = ["_static"]
 html_title = "gepref"
-html_logo = "_static/gepref.png"
+html_logo = "_static/gepref.svg"

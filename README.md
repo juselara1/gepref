@@ -2,10 +2,10 @@
 ---
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/juselara1/gepref/feat/docs/doc/source/_static/gepref.png" alt="logo" width="60%"></img>
+    <img src="./doc/source/_static/gepref.svg" alt="logo" width="60%"></img>
 </div>
 
-`gepref` is a minimal framework for building machine learning preprocessing strategies for different types of data (texts, images, tables, among others) using several backends.
+`gepref` is a lightweight framework designed for constructing machine learning preprocessing strategies tailored for various data types such as texts, images, tables, and more, utilizing multiple backends.
 
 ## Installation
 ---
@@ -26,4 +26,4 @@ The following libraries use `gepref` for different data modalities:
 ## Documentation
 ---
 
-The `gepref` framework contains the interfaces and generic classes required to build preprocessing libraries. You can check how to create different preprocessors and steps in the [official documentation]()
+The core library of ``gepref`` comprises solely of **interfaces** and **generic classes** aimed at facilitating the construction of preprocessing pipelines. It does not contain specific preprocessing implementations. You can check how to create different preprocessors and steps in the [official documentation](https://juselara1.github.io/gepref/).
