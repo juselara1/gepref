@@ -12,7 +12,8 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-	"jedi-language-server", "mypy", "pytest", "ruff", "flit"
+	"jedi-language-server", "mypy", "pytest", "ruff", "flit",
+	"sphinx", "sphinx_rtd_theme", "recommonmark"
 ]
 
 [tool.setuptools.packages.find]
