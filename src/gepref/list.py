@@ -20,7 +20,7 @@ class IdentityStep(AbstractStep[T]):
     def call(self, data: T) -> T:
         return data
 
-class SquareStep(AbstractStep[List]):
+class SquareStep(AbstractStep[T]):
     """
     A preprocessing step that implements the square function.
     """
