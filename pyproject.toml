@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gepref"
-version = "0.1.1"
+version = "0.1.2"
 description = "GEneral PREprocessing Framework (gepref)"
 authors = [{name="Juan Lara", email="julara@unal.edu.co"}]
 requires-python = ">3.10"
@@ -12,7 +12,8 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-	"jedi-language-server", "mypy", "pytest", "ruff", "flit"
+	"jedi-language-server", "mypy", "pytest", "ruff", "flit",
+	"sphinx", "sphinx-book-theme", "myst_parser"
 ]
 
 [tool.setuptools.packages.find]
