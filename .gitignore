@@ -11,3 +11,4 @@ build/
 dist/
 sdist/
 wheels/
+_site/
